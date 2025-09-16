@@ -1,4 +1,4 @@
-#rd_parral
+
 import os
 import numpy as np
 import torch
@@ -64,7 +64,7 @@ class MergedDataPreparator:
         print(f"触发器数量: {len(self.trigger_types)}")
         print(f"每个触发器后门样本: {poison_per_trigger}")
 
-        # 3. 使用RD距离贪心搜索选择候选样本（用于后门注入）
+        # 3. 贪心搜索选择候选样本（用于后门注入）
         print("\n" + "=" * 50)
         print("步骤1: 使用RD距离贪心搜索选择候选样本")
         print("=" * 50)
@@ -406,3 +406,4 @@ if __name__ == "__main__":
         target_label=0,  # airplane
         device='cuda'
     )
+
