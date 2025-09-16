@@ -1,4 +1,4 @@
-#rd_seq
+
 import os
 import numpy as np
 import torch
@@ -507,3 +507,4 @@ if __name__ == "__main__":
         target_label=0,  # airplane
         device='cuda'
     )
+
