@@ -53,7 +53,7 @@ class MultiTriggerDataPreparator:
         print(f"原始训练数据集大小: {len(train_dataset)} (蒸馏数据)")
         print(f"测试数据集大小: {len(test_dataset)}")
 
-        # 2. 计算分配参数 - 严格按照你的逻辑
+        # 2. 计算分配参数
         candidates_per_trigger = total_candidates // len(self.trigger_types)  # 300 / 5 = 60
         poison_per_trigger = int(candidates_per_trigger * poison_rate)  # 60 * 0.55 = 33
         clean_candidates_per_trigger = candidates_per_trigger - poison_per_trigger  # 60 - 33 = 27
@@ -68,7 +68,7 @@ class MultiTriggerDataPreparator:
         print(f"每个触发器额外干净样本: {additional_clean_per_trigger}")
         print(f"每个触发器总样本数: {target_samples_per_dataset}")
 
-        # 3. 使用RD距离贪心搜索选择候选样本
+        # 3. 贪心搜索选择候选样本
         print("\n" + "=" * 50)
         print("步骤1: 使用RD距离贪心搜索选择候选样本")
         print("=" * 50)
@@ -507,4 +507,5 @@ if __name__ == "__main__":
         target_label=0,  # airplane
         device='cuda'
     )
+
 
