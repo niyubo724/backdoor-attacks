@@ -137,8 +137,15 @@ Fork本仓库
 致谢
 
 感谢ModelScope团队开发的Swift框架
-感谢开源社区的贡献和支持
-感谢相关研究工作的启发
+@misc{zhao2024swiftascalablelightweightinfrastructure,
+      title={SWIFT:A Scalable lightWeight Infrastructure for Fine-Tuning},
+      author={Yuze Zhao and Jintao Huang and Jinghan Hu and Xingjun Wang and Yunlin Mao and Daoze Zhang and Zeyinzi Jiang and Zhikai Wu and Baole Ai and Ang Wang and Wenmeng Zhou and Yingda Chen},
+      year={2024},
+      eprint={2408.05517},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2408.05517},
+}
 
 联系方式
 如有问题或建议，请通过以下方式联系：
